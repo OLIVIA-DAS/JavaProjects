@@ -1,0 +1,18 @@
+package com.deloitte.others;
+
+public class Harbor {
+
+	public static void main(String[] args) {
+		Harbor bostonHarbor = new Harbor();
+		RiverBarge barge= new RiverBarge();
+		SeaPlane sPlane= new SeaPlane();
+		bostonHarbor.givePermissionToDock(barge);
+		bostonHarbor.givePermissionToDock(sPlane);
+		// TODO Auto-generated method stub
+
+	}
+	private void givePermissionToDock(Sailer s) {
+		s.dock();
+	}
+
+}
